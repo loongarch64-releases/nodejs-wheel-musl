@@ -1,6 +1,8 @@
 name: Auto Build nodejs-wheel (Self hosted)
 
 on:
+  schedule:
+    - cron: '45 17 * * *'
   workflow_dispatch:
 
 env:
